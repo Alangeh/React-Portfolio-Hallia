@@ -10,6 +10,7 @@ import {
   skills,
   services,
   languages,
+  certificates
 } from "../../content_option";
 
 export const About = () => {
@@ -35,6 +36,25 @@ export const About = () => {
             <div>
               <p>{dataabout.aboutme}</p>
             </div>
+          </Col>
+        </Row>
+        <Row className="sec_sp separation__line">
+          <Col lg="3">
+            <h3 className="color_sec py-4">My Certificates</h3>
+          </Col>
+          <Col lg="9" className="d-flex align-items-center">
+          {certificates.map((data, i) => {
+              return (
+                <div className="service_ py-4" key={i}>
+                  <h5 className="service__title">{data.title}</h5>
+                  <a href={data.link} target="_blank" rel="noopener noreferrer" className="button">
+                    <div id="button_p" className="ac_btn btn">
+                      View
+                    </div>
+                  </a>
+                </div>
+              );
+            })}
           </Col>
         </Row>
         <Row className="sec_sp separation__line">

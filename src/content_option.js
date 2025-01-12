@@ -1,4 +1,5 @@
-import haiImage from './assets/images/HAI.png';
+import haiImage from './assets/images/hai.png';
+import cspo__certificate from './assets/cspo__certificate.pdf';
 
 const logotext = "HAI DING";
 const meta = {
@@ -17,8 +18,14 @@ const introdata = {
     your_img_url: haiImage,
 };
 
+const certificates = [{
+    title: "CSPO Certificate",
+    link: cspo__certificate
+    },
+];
+
 const dataabout = {
-    title: "A bit about my self",
+    title: "A bit about myself",
     aboutme: "A versatile professional with experience in finance and management, translation, language education, product branding, entrepreneurship, and client management. Fluent in English, Chinese, and Japanese, I’ve authored research in finance and management, worked as a legal translator volunteered in technical workshops, and excelled in customer service, managing complex client inquiries. My skills also include creating engaging content that aligns with brand values, effectively connecting with diverse audiences.",
 };
 const worktimeline = [{
@@ -209,10 +216,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    linkedin: "https://www.linkedin.com/in/hai-ding-730833267/",
 };
 export {
     meta,
@@ -227,4 +231,5 @@ export {
     socialprofils,
     logotext,
     languages,
+    certificates
 };
